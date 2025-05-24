@@ -9,6 +9,9 @@ export class Guest {
   name: string;
 
   @Prop({ required: true })
+  relationship: string;
+
+  @Prop({ required: true })
   willAttend: boolean;
 
   @Prop({})
