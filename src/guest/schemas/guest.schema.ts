@@ -9,13 +9,13 @@ export class Guest {
   name: string;
 
   @Prop({ required: true })
+  willAttend: boolean;
+
+  @Prop({})
   numberOfPeople: number;
 
-  @Prop({ required: true })
+  @Prop({})
   location: string;
-
-  @Prop({ required: true })
-  willAttend: boolean;
 }
 
 export const GuestSchema = SchemaFactory.createForClass(Guest);

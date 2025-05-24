@@ -1,6 +1,6 @@
 export class CreateGuestDto {
   name: string;
-  numberOfPeople: number;
-  location: string;
   willAttend: boolean;
+  numberOfPeople?: number;
+  location?: string;
 }
