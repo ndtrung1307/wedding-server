@@ -13,6 +13,9 @@ export class Guest {
 
   @Prop({ required: true })
   location: string;
+
+  @Prop({ required: true })
+  willAttend: boolean;
 }
 
 export const GuestSchema = SchemaFactory.createForClass(Guest);
